@@ -1,0 +1,37 @@
+pipeline {
+    agent {
+        label 'newman-dev'
+    }
+    environment {
+        http_proxy = "http://singapour.groupe.generali.fr:328"
+    }
+    options {
+        buildDiscarder(logRotator(numToKeepStr: '15'))
+    }
+    stages {
+        stage('Run Tests') {
+            steps {
+                script {
+                   sh "ls -l"
+                   sh "https_proxy=$http_proxy npm run shopping_test"
+                }
+            }
+        }
+    }
+    post {
+        always {
+            publishHTML([
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'playwright-report',
+                reportFiles: "index.html",
+                reportName: "HTML Report",
+                reportTitles: "HTML Report",
+                includes: "**/*,**/**/*"
+            ])
+            archiveArtifacts artifacts: "playwright-report/**,test-results/**,*.png,**", followSymlinks: false
+            cleanWs()
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "shopping_test": "npx playwright test shop_and_pay.spec.ts --config playwright.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.33.0"
+  }
+}
