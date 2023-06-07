@@ -3,7 +3,7 @@ pipeline {
         label 'newman-dev'
     }
     environment {
-        http_proxy = "http://singapour.groupe.generali.fr:328"
+        http_proxy = process.env.PROXY_URL
     }
     options {
         buildDiscarder(logRotator(numToKeepStr: '15'))
@@ -12,7 +12,6 @@ pipeline {
         stage('Run Tests') {
             steps {
                 script {
-                   sh "ls -l"
                    sh "https_proxy=$http_proxy npm run shopping_test"
                 }
             }
