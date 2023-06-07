@@ -1,6 +1,12 @@
 # Tutoriel- JFTL 2023: Initiation à l'automatisation avec Playwright
 
 Ce dépôt contient le code source de l'exercice du tutoriel. Il s'agit d'un parcours utilisateur sur un site de e-commerce: https://www.saucedemo.com/
+Pour se connecter au site, utiliser ces identifiants:
+
+```bash
+USERNAME: standard_user
+PASSWORD: secret_sauce
+```
 
 ## Informations sur le Tuto
 
