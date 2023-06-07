@@ -25,7 +25,7 @@ Se familiariser avec la librairie Playwright. PW est un outil Open Source de Mic
 
 ## Commandes utiles
 
-Si vous souhaitez utiliser le code source de ce projet en local, cloner le dépôt ensuite Installe les dépendances du projet
+Si vous souhaitez utiliser le code source de ce projet en local, cloner le dépôt ensuite Installer les dépendances du projet
 
 ```bash
 git clone  https://github.com/mgharsallah79/tuto-playwright-jftl.git
@@ -38,13 +38,13 @@ npm install
 Installer les navigateurs
 
 ```bash
-npx playwright install
+npm playwright install
 ```
 
 Exécuter les tests
 
 ```bash
-npx playwright test
+npm playwright test
 ```
 
 Si vous voulez initier un nouveau projet:
@@ -59,7 +59,7 @@ Pour lancer les tests depuis VS code, installer l'extension PW
 ## Ressources et liens utiles
 
 - [Playwright.dev](https://playwright.dev/) - Documentation officielle
-- [Playwright Discord](https://aka.ms/playwright/discord) - there is a forum like channel where you can ask questions or search for answers if you are stuck.
+- [Playwright Discord](https://aka.ms/playwright/discord) - forum discord d'entraide sur des problèmatiques PW
 - [Playwright Youtube](https://www.youtube.com/@Playwrightdev) - Chaine youtube officielle de PW.
 - [Pourquoi choisir Playwright](https://marcusfelling.com/blog/2022/25-reasons-to-choose-playwright-as-your-next-web-testing-framework/) - 25 raisons pour choisir PW pour votre prochain projet d'automatisation (en Anglais)
 - [Playwright API Assertions](https://jestjs.io/docs/expect) - Documentation sur l'API des assertions JEST
