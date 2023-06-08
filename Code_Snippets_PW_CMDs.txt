@@ -1,0 +1,18 @@
+
+
+https://www.saucedemo.com/ 
+
+npx playwright test shopping.spec.ts 
+
+npx playwright test shopping.spec.ts –headed 
+
+npx playwright show-report 
+
+npx playwright test –ui
+
+await page.route("**/*.{png,jpg,jpeg,webp, svg}", (route) => route.abort());
+
+expect.soft(await page.screenshot()).toMatchSnapshot("shopping.png"); 
+
+npx playwright test --update-snapshots 
+
