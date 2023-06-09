@@ -14,5 +14,9 @@ await page.route("**/*.{png,jpg,jpeg,webp, svg}", (route) => route.abort());
 
 expect.soft(await page.screenshot()).toMatchSnapshot("shopping.png"); 
 
+await expect(page).toHaveScreenshot("shopping.png", {
+    fullPage: true,
+  });
+
 npx playwright test --update-snapshots 
 
