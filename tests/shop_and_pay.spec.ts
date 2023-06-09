@@ -26,7 +26,7 @@ test.describe("Shopping Workflow", () => {
 
   test("should add items to cart and complete checkout", async () => {
     await loginPage.navigateTo();
-    // await loginPage.blockPageImages();
+    await loginPage.blockPageImages();
     await loginPage.login(process.env.USER_NAME!, process.env.USER_PASSWORD!);
 
     // await shoppingPage.checkPageDisplay()
