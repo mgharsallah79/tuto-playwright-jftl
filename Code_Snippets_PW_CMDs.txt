@@ -4,7 +4,7 @@ https://www.saucedemo.com/
 
 npx playwright test shopping.spec.ts 
 
-npx playwright test shopping.spec.ts –headed 
+npx playwright test shopping.spec.ts –-headed 
 
 npx playwright show-report 
 

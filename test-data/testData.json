@@ -1,16 +1,11 @@
 {
-    "user": {
-      "username": "standard_user",
-      "password": "secret_sauce"
-    },
-    "checkoutInfo": {
-      "firstName": "Ricky",
-      "lastName": "Blund",
-      "postalCode": "75015"
-    },
-    "productNames": {
-      "backpack": "Sauce Labs Backpack",
-      "tshirt": "Test.allTheThings() T-Shirt (Red)"
-    }
+  "checkoutInfo": {
+    "firstName": "Ricky",
+    "lastName": "Blund",
+    "postalCode": "75015"
+  },
+  "productNames": {
+    "backpack": "Sauce Labs Backpack",
+    "tshirt": "Test.allTheThings() T-Shirt (Red)"
   }
-  
+}
