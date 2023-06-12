@@ -8,15 +8,26 @@ npx playwright test shopping.spec.ts –-headed
 
 npx playwright show-report 
 
-npx playwright test –ui
+npx playwright test --ui
 
 await page.route("**/*.{png,jpg,jpeg,webp, svg}", (route) => route.abort());
 
-expect.soft(await page.screenshot()).toMatchSnapshot("shopping.png"); 
 
 await expect(page).toHaveScreenshot("shopping.png", {
     fullPage: true,
   });
 
 npx playwright test --update-snapshots 
+
+a rajouter dans la section use du fichier config viewport: { width: 1280, height: 720 },
+a rajouter dans la raçine du fichier config
+
+
+ expect: {
+    toHaveScreenshot: { maxDiffPixels: 100 },
+    toMatchSnapshot: {
+      // An acceptable ratio of pixels that are different to the total amount of pixels, between 0 and 1.
+      maxDiffPixelRatio: 0.1,
+    },
+  },
 

@@ -19,6 +19,7 @@ Se familiariser avec la librairie Playwright. PW est un outil Open Source de Mic
 - Installer et configurer un projet Playwright
 - Créer un test dans Playwight
 - Améliorer le script de test
+- Implémenter les bonnes pratiques de dev
 - Rajouter un test visuel
 - Intégrer le test dans une chaîne CI
 
